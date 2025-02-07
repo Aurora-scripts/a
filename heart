@@ -15,7 +15,7 @@ local torso = newCam:WaitForChild("Torso")
 local char = player.Character or player.CharacterAdded:Wait()
 local hrp = char:FindFirstChild("HumanoidRootPart")
 
-torso.CFrame = hrp.CFrame * CFrame.new(0, -2, 0)
+torso.CFrame = hrp.CFrame * CFrame.new(1,-3,-7)
 
 local function rotateTorso180()
     torso.CFrame = torso.CFrame * CFrame.Angles(0, math.pi, 0) -- Rotate by 180 degrees on the Y axis
