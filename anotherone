@@ -42,14 +42,6 @@ game:GetService("RunService").RenderStepped:Connect(function()
 end)
 
 
--- Listener to detect when the animation ends and reset the camera
-WalkAnim.Stopped:Connect(function()
-    -- Reset the camera to the default
-    camera.CameraType = Enum.CameraType.Custom
-    -- Optionally, set the camera position back to the default
-    camera.CFrame = CFrame.new(player.Character.HumanoidRootPart.Position + Vector3.new(0, 5, 10), player.Character.HumanoidRootPart.Position)
-end)
-
 wait(5.2)
 
 torso.CFrame = CFrame.new(1,-50,-7) * CFrame.Angles(0, math.rad(180), 0)
